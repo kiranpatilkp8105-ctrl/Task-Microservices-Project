@@ -1,0 +1,118 @@
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.login-layout {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* ===== CARD ===== */
+.login-card {
+  width: 350px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  animation: slideIn 0.5s ease;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 14px;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== IMAGE ===== */
+.login-image img {
+  width: 360px;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .login-layout {
+    flex-direction: column;
+  }
+
+  .login-image img {
+    width: 280px;
+  }
+}
+.register-text {
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.register-link {
+  color: #4f46e5;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+/* 🔝 ADMIN BUTTON TOP RIGHT */
+.admin-btn-top {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  z-index: 10;
+}
+
+.btn-admin {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #f97316, #ef4444);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-admin:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+}

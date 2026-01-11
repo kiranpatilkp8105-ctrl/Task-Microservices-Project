@@ -1,0 +1,166 @@
+/* ===== Wrapper ===== */
+.task-list-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== Section Titles ===== */
+.section-title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* ===== Dashboard Stats Wrapper ===== */
+.stats-wrapper {
+  margin-bottom: 20px;
+}
+
+/* ===== Create Task Card ===== */
+.create-task-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin-bottom: 25px;
+}
+
+.create-task-card h3 {
+  margin-bottom: 15px;
+  color: #940952;
+}
+
+.create-task-card input,
+.create-task-card textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.create-task-card input:focus,
+.create-task-card textarea:focus {
+  border-color: #940952;
+}
+
+.create-task-card textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* ===== Tasks Container ===== */
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+/* ===== Task Card ===== */
+.task-card {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.task-content {
+  max-width: 60%;
+}
+
+.task-title {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.task-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* ===== Status Badge ===== */
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* ===== Buttons ===== */
+.btn-group {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #940952;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #a70d67;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .task-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-content {
+    max-width: 100%;
+  }
+
+  .btn-group {
+    width: 100%;
+  }
+}

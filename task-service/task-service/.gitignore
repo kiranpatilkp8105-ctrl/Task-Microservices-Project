@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# IDE files
+.idea/
+.vscode/
+
+.vscode/
+
